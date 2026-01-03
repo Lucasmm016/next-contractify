@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server'
+import type { NextResponse } from 'next/server'
 import type { InferErrorResponse, InferSuccessResponse, RouteDefinition } from '../core/types'
 
 export type NextResponseInit = Parameters<typeof NextResponse.json>[1]

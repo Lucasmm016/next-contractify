@@ -1,8 +1,10 @@
-import axios from 'axios'
+import axios, { type CreateAxiosDefaults } from 'axios'
 
-export const apiAxios = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL!,
-  headers: {
-    'Content-Type': 'application/json',
-  },
-})
+export function createAxiosInstance(config?: CreateAxiosDefaults) {
+  return axios.create({
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    ...config,
+  })
+}

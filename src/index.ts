@@ -19,4 +19,4 @@ export type {
 } from './core/types'
 
 // Para usar server: import { route } from 'next-contractify/server'
-// Para usar client: import { api } from 'next-contractify/client'
+// Para usar client: import { createApiClient } from 'next-contractify/client'
