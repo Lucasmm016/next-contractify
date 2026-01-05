@@ -1,6 +1,6 @@
 import axios, { type AxiosResponse, type CreateAxiosDefaults } from 'axios'
 
-import { createAxiosInstance } from '../axios'
+import { createAxiosInstance } from '../axiosInstance'
 import type { InferRequest, InferSuccessResponse } from '../core/types'
 
 import type { ClientRoute, HasRequiredKeys, RequestOptions } from './types'
